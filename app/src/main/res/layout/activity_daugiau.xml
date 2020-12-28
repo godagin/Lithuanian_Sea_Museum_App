@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".daugiauActivity"
+    android:background="@mipmap/fonas2"
+    android:padding="15dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/pirmas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ar žinojai?"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@android:color/background_dark"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/antras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Australijoje, šios kriauklės buvo naudojamos vietoj indų skysčiams nešti."
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@android:color/background_dark"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/kriauklis2"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/trecias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textAlignment="center"
+            android:text="Kriauklė kartu su gyvūnu gali sverti iki 18kg! Kriauklės ilgis gali siekti beveik metrą."
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@android:color/background_dark"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/kriauklis3"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</ScrollView>

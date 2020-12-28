@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paslaptisActivity"
+    android:background ="@mipmap/fonas2"
+    android:padding="15dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sveikinimas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Sveikinu pabaigus testą!"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                android:layout_marginTop="4mm"
+                />
+
+            <ImageView
+                android:id="@+id/paveiksliukas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/sveikinimas"
+                android:src="@mipmap/trimitininkas" />
+
+            <TextView
+                android:id="@+id/tekstas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/paveiksliukas"
+                android:text="Tave sveikina didžiausias pasaulyje moliuskas - Australijos trimitininkas!"
+                android:textSize="25dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@android:color/background_dark"
+                android:layout_marginTop="15sp"
+                android:textAlignment="center"
+                />
+
+            <Button
+                android:id="@+id/button_testi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Noriu sužinoti daugiau!"
+                android:layout_below="@id/tekstas"
+                android:textSize="25dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@android:color/background_dark"
+                android:background="#50000000"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

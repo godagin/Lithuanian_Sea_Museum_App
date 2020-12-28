@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fonas2"
+    android:padding="15dp"
+    tools:context=".KlausimynasActivity">
+
+    <TextView
+        android:id="@+id/text_rodyti_taskus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:freezesText="true"
+        android:text="Taškai: 0"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_rodyti_kelintas_numeris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:freezesText="true"
+        android:text="Klausimas: 1/x"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_rodyti_taskus"
+        android:layout_marginTop="5mm"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_rodyti_klausima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:freezesText="true"
+                android:padding="15dp"
+                android:text="klausimas klausimas klausimas klausimas klausimas klausimas klausimas"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_grupe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_centerVertical="true">
+
+                <RadioButton
+                    android:id="@+id/variantas1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:freezesText="true"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textColor="@android:color/background_dark"
+                    android:text="Opt 1"
+                    android:textSize="20sp"/>
+
+                <RadioButton
+                    android:id="@+id/variantas2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:freezesText="true"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textColor="@android:color/background_dark"
+                    android:text="Opt 2"
+                    android:textSize="20sp"/>
+
+                <RadioButton
+                    android:id="@+id/variantas3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:freezesText="true"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textColor="@android:color/background_dark"
+                    android:text="Opt 3"
+                    android:textSize="20sp"/>
+            </RadioGroup>
+
+            <Button
+            android:id="@+id/Button_patvirtinti_kitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_grupe"
+            android:layout_marginBottom="12dp"
+            android:background="#50000000"
+            android:freezesText="true"
+            android:text="Patvirtinti atsakymą"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@android:color/background_dark"
+            android:textSize="17dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
